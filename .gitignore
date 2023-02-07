@@ -1,0 +1,10 @@
+Thumbs.db*
+.DS_Store*
+node_modules
+.idea
+target
+*.iml
+.gradle
+build
+data_mysql
+allure-results
