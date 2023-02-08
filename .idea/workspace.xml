@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbc21520-2d48-46d0-b6ff-6b53b24370a7" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/incorrectValues.cvs" afterDir="false" />
+    <list default="true" id="bbc21520-2d48-46d0-b6ff-6b53b24370a7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/data/DataGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/page/CreditPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/page/CreditPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/page/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/page/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/page/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/page/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/test/BuyingTripApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/test/BuyingTripApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/test/BuyingTripDbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/test/BuyingTripDbTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/test/BuyingTripUiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/test/BuyingTripUiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -67,7 +76,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/HOME/Desktop/QAdiploma"
+    "last_opened_file_path": "C:/Users/HOME/Desktop/forPavel"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -78,7 +87,7 @@
       <recent name="C:\Users\HOME\Desktop\NewDiploma" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BuyingTripApiTest">
+  <component name="RunManager" selected="Gradle.BuyingTripUiTest">
     <configuration name="BuyingTripApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -102,12 +111,60 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="BuyingTripDbTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.test.BuyingTripDbTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="BuyingTripUiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.netology.test.BuyingTripUiTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="gradle-wrapper.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.BuyingTripUiTest" />
+        <item itemvalue="Gradle.BuyingTripDbTest" />
         <item itemvalue="Gradle.BuyingTripApiTest" />
         <item itemvalue="JAR Application.gradle-wrapper.jar" />
       </list>
@@ -143,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675800484471</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1">
+      <created>1675847239557</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675847239557</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

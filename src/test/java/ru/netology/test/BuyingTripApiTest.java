@@ -1,9 +1,9 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import data.ApiUtils;
-import data.Card;
-import data.DataGenerator;
+import ru.netology.data.ApiUtils;
+import ru.netology.data.Card;
+import ru.netology.data.DataGenerator;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;

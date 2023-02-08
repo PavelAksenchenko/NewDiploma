@@ -1,14 +1,14 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import data.Card;
-import data.DataGenerator;
-import data.DbUtils;
+import ru.netology.data.Card;
+import ru.netology.data.DataGenerator;
+import ru.netology.data.DbUtils;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
-import page.CreditPage;
-import page.PaymentPage;
-import page.StartPage;
+import ru.netology.page.CreditPage;
+import ru.netology.page.PaymentPage;
+import ru.netology.page.StartPage;
 
 import java.sql.SQLException;
 

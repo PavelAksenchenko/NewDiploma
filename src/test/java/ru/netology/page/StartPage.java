@@ -16,13 +16,13 @@ public class StartPage {
         heading.shouldBe(visible);
     }
 
-    public page.PaymentPage goToPaymentPage() {
+    public PaymentPage goToPaymentPage() {
         buyButton.click();
-        return new page.PaymentPage();
+        return new PaymentPage();
     }
 
-    public page.CreditPage goToCreditPage() {
+    public CreditPage goToCreditPage() {
         creditButton.click();
-        return new page.CreditPage();
+        return new CreditPage();
     }
 }
