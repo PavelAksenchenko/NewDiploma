@@ -27,7 +27,10 @@ public class ApiUtils {
                         .body(card)
                         .when()
                         .post(path)
-                        .getStatusCode();
+                        .then()
+                        .log().body()
+                        .extract()
+                        .statusCode();
         System.out.println(statusCode);
         return statusCode;
     }
