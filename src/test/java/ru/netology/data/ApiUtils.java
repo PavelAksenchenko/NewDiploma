@@ -13,7 +13,7 @@ public class ApiUtils {
     static String url = System.getProperty("sut.url");
 
     static RequestSpecification requestSpec = new RequestSpecBuilder()
-            .setBaseUri(url.split(":")[0] + ":" + url.split(":")[1])
+            .setBaseUri(url)
             .setPort(Integer.parseInt(url.split(":")[2].split("/")[0]))
             .setAccept(ContentType.JSON)
             .setContentType(ContentType.JSON)
