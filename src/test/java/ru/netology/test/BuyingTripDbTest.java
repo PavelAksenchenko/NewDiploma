@@ -1,16 +1,14 @@
 package ru.netology.test;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.*;
 import ru.netology.data.Card;
 import ru.netology.data.DataGenerator;
 import ru.netology.data.DbUtils;
-import io.qameta.allure.selenide.AllureSelenide;
-import org.junit.jupiter.api.*;
 import ru.netology.page.CreditPage;
 import ru.netology.page.PaymentPage;
 import ru.netology.page.StartPage;
-
-import java.sql.SQLException;
 
 import static com.codeborne.selenide.Selenide.open;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,7 +21,7 @@ public class BuyingTripDbTest {
     Card fakeCard = DataGenerator.getFakeCard();
 
     @BeforeEach
-    public void openPage() throws SQLException {
+    public void openPage() {
         //DbUtils.clearTables();
         String url = System.getProperty("sut.url");
         open(url);
@@ -41,7 +39,7 @@ public class BuyingTripDbTest {
 
     @Test
     @DisplayName("Должен подтверждать покупку по карте со статусом APPROVED")
-    void shouldConfirmPaymentWithValidCard() throws SQLException {
+    void shouldConfirmPaymentWithValidCard() {
         StartPage startPage = new StartPage();
         PaymentPage paymentPage = startPage.goToPaymentPage();
         paymentPage.fillData(validCard);
@@ -53,7 +51,7 @@ public class BuyingTripDbTest {
 
     @Test
     @DisplayName("Должен подтверждать кредит по карте со статусом APPROVED")
-    void shouldConfirmCreditWithValidCard() throws SQLException {
+    void shouldConfirmCreditWithValidCard() {
         StartPage startPage = new StartPage();
         CreditPage creditPage = startPage.goToCreditPage();
         creditPage.fillData(validCard);
@@ -64,7 +62,7 @@ public class BuyingTripDbTest {
 
     @Test
     @DisplayName("Не должен подтверждать покупку по карте со статусом DECLINED")
-    void shouldNotConfirmPaymentWithDeclinedCard() throws SQLException {
+    void shouldNotConfirmPaymentWithDeclinedCard() {
         StartPage startPage = new StartPage();
         PaymentPage paymentPage = startPage.goToPaymentPage();
         paymentPage.fillData(declinedCard);
@@ -75,7 +73,7 @@ public class BuyingTripDbTest {
 
     @Test
     @DisplayName("Не должен подтверждать кредит по карте со статусом DECLINED")
-    void shouldNotConfirmCreditWithDeclinedCard() throws SQLException {
+    void shouldNotConfirmCreditWithDeclinedCard() {
         StartPage startPage = new StartPage();
         CreditPage creditPage = startPage.goToCreditPage();
         creditPage.fillData(declinedCard);
@@ -87,7 +85,7 @@ public class BuyingTripDbTest {
 
     @Test
     @DisplayName("Не должен подтверждать покупку по несуществующей карте")
-    void shouldNotConfirmPaymentWithFakeCard() throws SQLException {
+    void shouldNotConfirmPaymentWithFakeCard() {
         DbUtils.clearTables();
         StartPage startPage = new StartPage();
         PaymentPage paymentPage = startPage.goToPaymentPage();
@@ -100,7 +98,7 @@ public class BuyingTripDbTest {
 
     @Test
     @DisplayName("Не должен подтверждать кредит по несуществующей карте")
-    void shouldNotConfirmCreditWithFakeCard() throws SQLException {
+    void shouldNotConfirmCreditWithFakeCard() {
         StartPage startPage = new StartPage();
         CreditPage creditPage = startPage.goToCreditPage();
         creditPage.fillData(fakeCard);

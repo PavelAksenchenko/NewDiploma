@@ -14,7 +14,6 @@ public class ApiUtils {
 
     static RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri(url)
-            .setPort(Integer.parseInt(url.split(":")[2].split("/")[0]))
             .setAccept(ContentType.JSON)
             .setContentType(ContentType.JSON)
             .log(LogDetail.ALL)
@@ -31,7 +30,6 @@ public class ApiUtils {
                         .log().body()
                         .extract()
                         .statusCode();
-        System.out.println(statusCode);
         return statusCode;
     }
 }

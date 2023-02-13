@@ -5,7 +5,6 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
 import java.sql.DriverManager;
-import java.sql.SQLException;
 
 public class DbUtils {
     static String url = System.getProperty("db.url");
@@ -13,7 +12,7 @@ public class DbUtils {
     static String password = System.getProperty("db.password");
 
     @SneakyThrows
-    public static void clearTables() throws SQLException {
+    public static void clearTables() {
 
         var deleteOrderEntity = "DELETE FROM order_entity";
         var deletePaymentEntity = "DELETE FROM payment_entity";
@@ -28,18 +27,20 @@ public class DbUtils {
         var count = runner.query(conn, countSQL, new ScalarHandler<>());
     }
 
-
-    public static String findPaymentStatus() throws SQLException {
+    @SneakyThrows
+    public static String findPaymentStatus() {
         var statusSQL = "SELECT status FROM payment_entity ORDER BY created DESC LIMIT 1";
         return getData(statusSQL);
     }
 
-    public static String findCreditStatus() throws SQLException {
+    @SneakyThrows
+    public static String findCreditStatus() {
         var statusSQL = "SELECT status FROM credit_request_entity ORDER BY created DESC LIMIT 1";
         return getData(statusSQL);
     }
 
-    public static String countRecords() throws SQLException {
+    @SneakyThrows
+    public static String countRecords() {
         var countSQL = "SELECT COUNT(*) FROM order_entity";
         var runner = new QueryRunner();
         Long count = null;
@@ -49,7 +50,8 @@ public class DbUtils {
         return Long.toString(count);
     }
 
-    private static String getData(String query) throws SQLException {
+    @SneakyThrows
+    private static String getData(String query) {
         var runner = new QueryRunner();
         String data;
         var conn = DriverManager.getConnection(
