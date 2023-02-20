@@ -12,8 +12,9 @@
 70.96% тестов завершилось успешно
 
 Отчетность Allure
-![2023-02-20_20-30-13](https://user-images.githubusercontent.com/95394199/220171847-d2f1ef40-cd36-4bae-86f8-be5d895f48a8.png)
-![2023-02-20_20-29-50](https://user-images.githubusercontent.com/95394199/220171852-6257e069-e1ab-4d21-9fbb-6585b890f2ed.png)
-![2023-02-20_20-32-35](https://user-images.githubusercontent.com/95394199/220171853-a5b43362-086f-4905-a056-a2d11a631c01.png)
-![2023-02-20_20-31-39](https://user-images.githubusercontent.com/95394199/220171855-0aa2715b-c3c0-4af2-918e-1f72d7a0a352.png)
-![2023-02-20_20-31-14](https://user-images.githubusercontent.com/95394199/220171856-7eb7783c-d207-4a54-9683-4f1a43e48717.png)
+
+![2023-02-20_20-29-50](https://user-images.githubusercontent.com/95394199/220171909-bb6316a0-c32a-40c5-a488-8f6ef01ea137.png)
+![2023-02-20_20-30-13](https://user-images.githubusercontent.com/95394199/220171923-dd23f30e-1ac6-4f74-a900-ff6690151e20.png)
+![2023-02-20_20-31-14](https://user-images.githubusercontent.com/95394199/220171927-f7088f62-7b83-4013-9803-1be2dc84857f.png)
+![2023-02-20_20-31-39](https://user-images.githubusercontent.com/95394199/220171937-b79a3379-2ddc-4d19-aaef-d6cd9157444b.png)
+![2023-02-20_20-32-35](https://user-images.githubusercontent.com/95394199/220171942-9008df48-28ed-44ed-b493-c0d86a83fe34.png)
