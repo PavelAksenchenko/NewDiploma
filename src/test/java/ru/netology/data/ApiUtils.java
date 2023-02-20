@@ -8,6 +8,7 @@ import io.restassured.specification.RequestSpecification;
 import static io.restassured.RestAssured.given;
 
 
+
 public class ApiUtils {
 
     static String url = System.getProperty("sut.url");
@@ -32,4 +33,15 @@ public class ApiUtils {
                         .statusCode();
         return statusCode;
     }
+    public static String getHeaderName (Card card, String path) {
+        String status = given()
+                .spec(requestSpec)
+                .body(card)
+                .when()
+                .post(path)
+                .then()
+                .extract().jsonPath().getString("status");
+        return status;
+    }
 }
+
