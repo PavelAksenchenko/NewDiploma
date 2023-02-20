@@ -2,7 +2,7 @@
 
 ## Документы
 * [План автоматизации](https://github.com/PavelAksenchenko/QAdiploma/blob/master/docs/Plan.md)
-* [Отчет по итогам тестирования](https://github.com/PavelAksenchenko/QAdiploma/blob/master/docs/Report.md)
+* [Отчет по итогам тестирования](https://github.com/PavelAksenchenko/NewDiploma/blob/master/docs/Report.md)
 * [Отчет по итогам автоматизации](https://github.com/PavelAksenchenko/QAdiploma/blob/master/docs/Summary.md)
 
 Дипломный проект представляет собой автоматизацию тестирования комплексного сервиса, взаимодействующего с СУБД и API Банка.
