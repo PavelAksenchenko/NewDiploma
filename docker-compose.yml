@@ -10,9 +10,9 @@ services:
     container_name: pstg-container
     ports:
       - '5432:5432'
-    #    для Windows 10 Pro на Mac не работает:
-    #    volumes:
-    #      - ./data_postgres:/var/lib/postgres
+#    для Windows 10 Pro на Mac не работает:
+#    volumes:
+#      - ./data_postgres:/var/lib/postgres
 
     environment:
       - POSTGRES_PASSWORD=pass

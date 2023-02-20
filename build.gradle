@@ -44,4 +44,3 @@ test {
     systemProperty 'sut.url', System.getProperty('sut.url', "http://localhost:8080/")
 
 }
-
